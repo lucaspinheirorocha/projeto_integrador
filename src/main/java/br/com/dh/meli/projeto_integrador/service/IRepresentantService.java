@@ -5,4 +5,5 @@ import br.com.dh.meli.projeto_integrador.model.Representant;
 
 public interface IRepresentantService {
     RepresentantDTO create(RepresentantDTO representantDTO);
+    RepresentantDTO update(Long id, RepresentantDTO representantDTO);
 }

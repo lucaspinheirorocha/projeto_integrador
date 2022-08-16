@@ -32,9 +32,22 @@ public class RepresentantService implements IRepresentantService{
         return representantDTO;
     }
 
-    private Representant findByName(String representantName) {
+    @Override
+    public RepresentantDTO update(Long id, RepresentantDTO representantDTO) {
+        Representant representantFound = findById(id);
+
+        Representant representantModel = convertToModel(representantDTO);
+        representantFound.setWarehouse(representantModel.getWarehouse());
+        representantFound.setName(representantModel.getName());
+        repo.saveAndFlush(representantModel);
+        representantDTO.setId(representantFound.getId());
+        System.out.println(representantDTO.toString());
+        return representantDTO;
+    }
+
+    private Representant findById(Long id) {
         Optional<Representant> representantFound = repo
-                .findRepresentantByName(representantName);
+                .findById(id);
 
         if (representantFound.isEmpty()) {
             throw new NotFoundException("Representant not found");

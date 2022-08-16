@@ -62,4 +62,8 @@ public class RepresentantTestUtil {
         representant.setId(1L);
         return representant;
     }
+
+    public static Representant updateMock(){
+        return createMock();
+    }
 }
