@@ -60,9 +60,9 @@ public class RepresentantService implements IRepresentantService{
         Warehouse warehouse = warehouseService
                 .findWarehouseById(representantDTO.getWarehouseId());
 
-        Representant convertedRepresentant = IRepresentantMapper.MAPPER
-                .mapDtoToModel(representantDTO);
+        Representant convertedRepresentant = new Representant();
 
+        convertedRepresentant.setName(representantDTO.getName());
         convertedRepresentant.setWarehouse(warehouse);
         return convertedRepresentant;
     }
