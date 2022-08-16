@@ -14,8 +14,4 @@ public abstract class Person {
 
     @Column(nullable = false)
     private String name;
-
-//    @OneToOne(mappedBy = "person", cascade = CascadeType.ALL)
-//    @JsonIgnoreProperties("person")
-//    private AddressModel address;
 }

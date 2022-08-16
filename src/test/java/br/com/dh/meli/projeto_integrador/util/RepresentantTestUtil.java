@@ -1,5 +1,6 @@
 package br.com.dh.meli.projeto_integrador.util;
 
+import br.com.dh.meli.projeto_integrador.dto.RepresentantDTO;
 import br.com.dh.meli.projeto_integrador.model.Representant;
 import java.util.ArrayList;
 import java.util.List;
@@ -47,5 +48,18 @@ public class RepresentantTestUtil {
         List<Representant> representantList = new ArrayList<>();
         representantList.add(representantSampleOne());
         return representantList;
+    }
+
+    public static RepresentantDTO generateRepresentantDTO() {
+        return RepresentantDTO.builder()
+                .name("Joice")
+                .warehouseId(1L)
+                .build();
+    }
+
+    public static Representant createMock(){
+        Representant representant = Representant.builder().build();
+        representant.setId(1L);
+        return representant;
     }
 }
