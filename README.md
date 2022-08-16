@@ -7,7 +7,7 @@
 
 ## 🚩 Postman collection
 * Variveis do Postman [`src/main/resources/collection/workspace.postman_globals.json`](src/main/resources/collection/workspace.postman_globals.json)
-* Exemplos de Uso [`src/main/resources/collection/Projeto_Integrador.postman_collection.json`](src/main/resources/collection/Projeto_Integrador.postman_collection.json)
+* Exemplos de Uso [`https://www.postman.com/transformeli/workspace/projeto-integrador/collection/22797384-8272636a-77eb-4416-8ca6-375f827113d4?action=share&creator=22797384`](https://www.postman.com/transformeli/workspace/projeto-integrador/collection/22797384-8272636a-77eb-4416-8ca6-375f827113d4?action=share&creator=22797384)
 
 ## 📝 Proposta
 Criar uma API REST que faz o gerenciamento de estoque e venda de produtos frescos.
@@ -19,7 +19,7 @@ Criar uma API REST que faz o gerenciamento de estoque e venda de produtos fresco
 - Abra seu terminal e digite o seguinte comando:
 
 ```
-git clone git@github.com:rebecccruz/projeto_integrador.git
+git clone git@github.com:lucaspinheirorocha/projeto_integrador.git
 ```
 
 - Ainda em seu terminal digite o comando abaixo para entrar na pasta do projeto:

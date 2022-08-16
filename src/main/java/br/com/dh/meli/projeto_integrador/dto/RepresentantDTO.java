@@ -19,8 +19,10 @@ import javax.validation.constraints.NotEmpty;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RepresentantDTO {
+    private Long id;
     @NotEmpty(message = "O campo representantName não pode estar vazio.")
-    public String name;
-    @NotEmpty(message = "O campo Address não pode estar vazio.")
-    public AddressModel address;
+    private String name;
+
+    @NotEmpty(message = "O campo warehouseId não pode estar vazio")
+    private Long warehouseId;
 }
