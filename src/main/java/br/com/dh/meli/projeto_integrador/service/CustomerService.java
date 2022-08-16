@@ -18,7 +18,6 @@ public class CustomerService implements ICustomerService {
         Optional<Customer> costumer = repo.findById(id);
         if(costumer.isEmpty()){
             throw new NotFoundException("Customer not found");
-
         }
         return costumer.get();
     }
